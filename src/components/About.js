@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const About = () => {
   return (
     <section className="relative isolate overflow-hidden bg-white px-6 py-12 sm:py-16 lg:px-8">
@@ -8,14 +7,24 @@ const About = () => {
       <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-red-600/10 ring-1 ring-red-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <div className="mx-auto h-12 text-4xl text-center font-semibold">
-            About Us
+          About Us
         </div>
         <figure className="mt-10">
           <blockquote className="text-center text-xl font-semibold leading-8 text-gray-600 sm:text-2xl sm:leading-9">
             <p>
-              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
-              in laborum sed rerum et corporis.”
+              “We're a tight-knit group of exceptional individuals on a mission
+              to bring the magic of robotics to the world. Each one of us is a
+              powerhouse of unique skills, and together, we create a blend
+              that's nothing short of extraordinary. Our secret sauce? Stellar
+              communication and a knack for collaboration that turns projects
+              into groundbreaking experiences. We don't just aim for success; we
+              chase the impossible and turn it into possible. Every project is a
+              canvas where we paint our collective expertise, ensuring not just
+              success but redefining what success means. For us, robotics isn't
+              just a career; it's a shared dream that pulses through our veins.
+              As a united front, we envision a world that's not just tech-savvy
+              but also beautifully comfortable, all thanks to the wonders of
+              robotics.”
             </p>
           </blockquote>
           {/* <figcaption className="mt-10">
