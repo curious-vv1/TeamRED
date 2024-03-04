@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Projects from './components/Projects';
+import Sponsor from './components/Sponsor';
 
 
 export default function App() {
@@ -20,6 +21,10 @@ export default function App() {
   {
     path:"/projects",
     element:<Projects />
+  },
+  {
+    path:"/sponsor",
+    element:<Sponsor />
   }
  ])
 
