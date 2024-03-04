@@ -4,13 +4,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import redLogo from "../assets/redLogo.png";
-import header from "../assets/header.jpg";
 
 const navigation = [
   { name: "Home", href: "#" },
   { name: "Achievements", href: "#achievement" },
   { name: "About", href: "#about" },
-  { name: "Contact", href: "#" },
+  { name: "Contact", href: "#footer" },
   // { name: "Sponsor us", href: "#" },
 ];
 
@@ -59,10 +58,10 @@ const Hero = () => {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link
-              to="/sponsor"
+              to="/support"
               className="text-lg font-semibold leading-6 text-gray-900"
             >
-              Sponsor us<span aria-hidden="true">&rarr;</span>
+              Support us<span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
         </nav>
@@ -107,12 +106,12 @@ const Hero = () => {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
+                  <Link
+                    to="/support"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
-                    Sponsor us
-                  </a>
+                    Support us
+                  </Link>
                 </div>
               </div>
             </div>
@@ -154,7 +153,7 @@ const Hero = () => {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
-                to="/projects"
+                to="/projectspage"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Our Projects

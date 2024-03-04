@@ -6,8 +6,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Projects from './components/Projects';
-import Sponsor from './components/Sponsor';
+
+import ProjectsPage from './components/ProjectsPage';
+import Support from './components/Support';
 
 
 export default function App() {
@@ -19,12 +20,12 @@ export default function App() {
     element:<Home />
   },
   {
-    path:"/projects",
-    element:<Projects />
+    path:"/projectspage",
+    element:<ProjectsPage />
   },
   {
-    path:"/sponsor",
-    element:<Sponsor />
+    path:"/support",
+    element:<Support />
   }
  ])
 

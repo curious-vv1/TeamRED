@@ -6,6 +6,7 @@ import {
   faLinkedin,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -35,31 +36,40 @@ const Footer = () => {
             <a
               key={item.name}
               href={item.href}
-              className="text-base  font-semibold leading-6 text-white"
+              className="text-base  font-semibold leading-6 text-white hover:text-gray-100 transition-transform duration-300"
             >
               {item.name}
             </a>
           ))}
         </div>
-        <div className="my-8 flex flex-row justify-around items-center text-sm text-gray-200">
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className="order-2 md:order-1 mt-8 md:mt-0 mr-4 text-4xl"
-          />
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="order-2 md:order-1 mt-8 md:mt-0 mr-4 text-4xl"
-          />
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="order-2 md:order-1 mt-8 md:mt-0 mr-4 text-4xl"
-          />
-          <FontAwesomeIcon
-            icon={faYoutube}
-            className="order-2 md:order-1 mt-8 md:mt-0 mr-4 text-4xl"
-          />
+        <div className="my-8 flex flex-row justify-around items-center text-sm text-white">
+          <Link to="https://www.instagram.com/team_r.e.d/">
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="order-2 md:order-1 mt-8 md:mt-0 mr-4 text-4xl hover:text-gray-100 transition-transform duration-300"
+            />
+          </Link>
+
+          <Link to="https://github.com/orgs/TeamRED-iiitbh/repositories">
+            <FontAwesomeIcon
+              icon={faGithub}
+              className="order-2 md:order-1 mt-8 md:mt-0 mr-4 text-4xl hover:text-gray-100 transition-transform duration-300"
+            />
+          </Link>
+          <Link to="https://www.linkedin.com/company/team-red-iiitbh">
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="order-2 md:order-1 mt-8 md:mt-0 mr-4 text-4xl hover:text-gray-100 transition-transform duration-300"
+            />
+          </Link>
+          <Link to="https://www.youtube.com/channel/UCKQeB_njjSxYcJBzSG1_mnQ">
+            <FontAwesomeIcon
+              icon={faYoutube}
+              className="order-2 md:order-1 mt-8 md:mt-0 mr-4 text-4xl hover:text-gray-100 transition-transform duration-300"
+            />
+          </Link>
         </div>
-        <div className="text-center mt-8 text-white">© Team R.E.D, 2023</div>
+        <p className="text-center mt-8 text-white hover:text-gray-100 transition-transform duration-300">© Team R.E.D, 2023</p>
       </div>
     </div>
   );
