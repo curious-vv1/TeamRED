@@ -10,7 +10,8 @@ const navigation = [
   { name: "Achievements", href: "#achievement" },
   { name: "About", href: "#about" },
   { name: "Contact", href: "#footer" },
-  // { name: "Sponsor us", href: "#" },
+  { name: "Gallery", href: "#gallery" },
+  { name: "Team", href: "#team" },
 ];
 
 const Hero = () => {
@@ -19,7 +20,7 @@ const Hero = () => {
 
   return (
     <div
-      className="bg-red-100 h-screen"
+      className="bg-red-50 h-screen"
       // style={{
       //   backgroundImage: `url(${backgroundImageUrl})`,
       // }}
@@ -146,10 +147,8 @@ const Hero = () => {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-7xl">
               Team RED
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+            <p className="mt-6 text-3xl font-semibold leading-8 text-red-400">
+              We build the robots that build the future.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
