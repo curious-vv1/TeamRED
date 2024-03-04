@@ -9,6 +9,8 @@ const navigation = [
   { name: "Achievements", href: "/#achievement" },
   { name: "About", href: "/#about" },
   { name: "Contact", href: "/#" },
+  { name: "Gallery", href: "/#gallery" },
+  { name: "Team", href: "/#team" },
 ];
 
 const Navbar = () => {
@@ -53,9 +55,9 @@ const Navbar = () => {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link to="/support" className="text-lg font-semibold leading-6 text-gray-900">
-            Support us <span aria-hidden="true">&rarr;</span>
-          </Link>
+          <a href="#" className="text-lg font-semibold leading-6 text-gray-900">
+            Log in <span aria-hidden="true">&rarr;</span>
+          </a>
         </div>
       </nav>
       <Dialog
@@ -97,12 +99,12 @@ const Navbar = () => {
                 ))}
               </div>
               <div className="py-6">
-                <Link
-                  to="/support"
+                <a
+                  href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  Support us
-                </Link>
+                  Log in
+                </a>
               </div>
             </div>
           </div>

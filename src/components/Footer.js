@@ -13,6 +13,8 @@ const navigation = [
   { name: "Achievements", href: "/#achievement" },
   { name: "About", href: "/#about" },
   { name: "Contact", href: "/#" },
+  { name: "Gallery", href: "/#gallery" },
+  { name: "Team", href: "/#team" },
 ];
 
 const Footer = () => {

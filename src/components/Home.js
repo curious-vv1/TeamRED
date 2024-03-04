@@ -9,7 +9,7 @@ import Gallery from "./Gallery";
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <Hero />
       <div>
         <div id="about">
@@ -21,10 +21,10 @@ const Home = () => {
         <div id="achievement">
           <Achievement />
         </div>
-        <div>
+        <div id="team">
           <Team />
         </div>
-        <div>
+        <div id="gallery">
           <Gallery />
         </div>
       </div>
