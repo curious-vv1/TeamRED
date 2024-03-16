@@ -12,6 +12,7 @@ const navigation = [
   { name: "Contact", href: "#footer" },
   { name: "Gallery", href: "#gallery" },
   { name: "Team", href: "#team" },
+  {name: "Projects", href: "#projects"}
 ];
 
 const Hero = () => {

@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import { ChevronDoubleLeftIcon,ChevronDoubleRightIcon} from "@heroicons/react/24/outline";
+import {
+  ChevronDoubleLeftIcon,
+  ChevronDoubleRightIcon,
+} from "@heroicons/react/24/outline";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Arm0 from "../assets/arm0.jpeg";
@@ -10,49 +13,41 @@ import Drone0 from "../assets/drone0.jpg";
 import Manipulator0 from "../assets/manipulator0.jpg";
 import Rcplane0 from "../assets/rcplane0.jpg";
 
-
-
-
 const works = [
   {
     name: "Robotic Arm",
     description:
       "An intelligent robotic arm with advanced workspace analysis techniques with integrated AI techniques for path planning and object pick place mechanism.",
     status: "ongoing",
-    image:
-      Arm0,
+    image: Arm0,
   },
   {
     name: "Autonomous Drone",
     description:
       "An autonomous flying drone having the capabilities of accepting missions & can complete the Mission without human intervention, enough to avoid obstacles, and perform operations based on image.",
     status: "ongoing",
-    image:
-      Drone0,
+    image: Drone0,
   },
   {
     name: "Maze Solver Robot",
     description:
       "An autonomous car with maze solving capabilities traversing path avoiding dynamic obstacles and creating a successful shortest path between two points in a any traversed map",
     status: "Completed",
-    image:
-      Lfr0,
+    image: Lfr0,
   },
   {
     name: "Cylinderical Manipulator",
     description:
       "A robotic manipulator with a revolute joint allowing access to cylindrical C-space equipped with advanced drilling end effector for soil analysis.",
     status: "Completed",
-    image:
-      Manipulator0,
+    image: Manipulator0,
   },
   {
     name: "RC Plane",
     description:
       "A remote controlled plane which has high maneuverability to do aerobatics",
     status: "Completed",
-    image:
-      Rcplane0,
+    image: Rcplane0,
   },
   // {
   //   name: "Robotic Arm",
@@ -69,10 +64,15 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", color: "red",paddingLeft:"0.5rem" }} 
+      style={{
+        ...style,
+        display: "block",
+        color: "red",
+        paddingLeft: "0.5rem",
+      }}
       onClick={onClick}
     >
-      <ChevronDoubleRightIcon className="h-6 w-6 scale-150" /> 
+      <ChevronDoubleRightIcon className="h-6 w-6 scale-150" />
     </div>
   );
 }
@@ -82,15 +82,20 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", color: "red",paddingRight:"0.5rem" }} 
+      style={{
+        ...style,
+        display: "block",
+        color: "red",
+        paddingRight: "0.5rem",
+      }}
       onClick={onClick}
     >
-      <ChevronDoubleLeftIcon className="h-6 w-6 scale-125"/> 
+      <ChevronDoubleLeftIcon className="h-6 w-6 scale-125" />
     </div>
   );
 }
 
-const Projects = () => {
+const Mprojects = () => {
   const settings = {
     dots: true,
     infinite: false,
@@ -109,7 +114,7 @@ const Projects = () => {
             Projects
           </h2>
 
-          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-1 lg:gap-x-16 lg:space-y-0">
+          <div className="mt-6">
             <Slider {...settings}>
               {works.map((work) => (
                 <div key={work.name} className="flex">
@@ -155,15 +160,6 @@ const Projects = () => {
                         </Link>
                       </div>
                     </div>
-                    <div className="relative mt-16 h-60 lg:mt-8">
-                      <img
-                        className="absolute left-0 top-0 lg:w-[36rem] md:w-[32rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                        src={work.image}
-                        alt="App screenshot"
-                        width={1080}
-                        height={1080}
-                      />
-                    </div>
                   </div>
                 </div>
               ))}
@@ -175,4 +171,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Mprojects;

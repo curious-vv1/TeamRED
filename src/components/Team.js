@@ -5,6 +5,10 @@ import Shirshak from "../assets/shirshak.JPG";
 import Ujjawal from "../assets/ujjawal.JPG";
 import Shrijal from "../assets/shrijal.JPG";
 import Raj from "../assets/raj.JPG";
+import Abhijeet from "../assets/abhijeet.jpeg";
+import Sakshi from "../assets/sakshi.jpeg";
+import Shashi from "../assets/shashi.png";
+
 
 const people = [
   {
@@ -37,12 +41,29 @@ const people = [
     role: "Mechanical Head",
     imageUrl: Raj,
   },
+  {
+    name: "Abhijeet Awasthi",
+    role: "Core Member",
+    imageUrl: Abhijeet,
+  },
+  {
+    name: "Sakshi Meena",
+    role: "Core Member",
+    imageUrl: Sakshi,
+  },
+  {
+    name: "Shashikant Pandey",
+    role: "Core Member",
+    imageUrl: Shashi,
+  },
 ];
 
 const Team = () => {
   return (
-    <div className="bg-white py-12
-     sm:py-32">
+    <div
+      className="bg-white py-12
+     sm:py-32"
+    >
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-5">
         <div className="max-w-2xl">
           <h2 className="lg:text-6xl font-bold tracking-tight text-gray-900 sm:text-4xl">
