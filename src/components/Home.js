@@ -5,7 +5,9 @@ import Achievement from "./Achievement";
 import Footer from "./Footer";
 import Team from "./Team";
 import Projects from "./Projects";
+import MediaQuery from "react-responsive";
 import Gallery from "./Gallery";
+import Mprojects from "./Mprojects";
 
 const Home = () => {
   return (
@@ -15,17 +17,22 @@ const Home = () => {
         <div id="about">
           <About />
         </div>
-        <div>
-          <Projects />
+        <div id="projects">
+          <MediaQuery maxWidth={767}>
+            <Mprojects />
+          </MediaQuery>
+          <MediaQuery minWidth={768}>
+            <Projects />
+          </MediaQuery>
         </div>
         <div id="achievement">
           <Achievement />
         </div>
+        <div id="gallery" className="hidden lg:block">
+          <Gallery />
+        </div>
         <div id="team">
           <Team />
-        </div>
-        <div id="gallery">
-          <Gallery />
         </div>
       </div>
       <div id="footer">
