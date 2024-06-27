@@ -12,7 +12,7 @@ import Shashi from "../assets/shashi.png";
 
 const people = [
   {
-    name: "Pawan maddheshiya",
+    name: "Pawan Maddheshiya",
     role: "Team Captain",
     imageUrl: Pawan,
   },
