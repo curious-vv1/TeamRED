@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-.shadow-red {
-  --tw-shadow: 0 25px 50px -12px rgba(255, 0, 0, 0.5);
+html {
+  @apply font-sans text-white;
+}
+
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem
+  }
 }

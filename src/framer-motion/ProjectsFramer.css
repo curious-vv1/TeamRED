@@ -1,0 +1,160 @@
+/* Base styling for the project container */
+.projects {
+    width: 100%;
+    height: 95vh;
+    margin: 6vw;
+    border-radius: 12px;
+    background: #000000;
+    /* Black background */
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease-in-out;
+    color: #ffffff;
+    /* White text color */
+}
+
+/* Hover effect for the project container */
+.projects:hover {
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+    /* Red shadow on hover */
+}
+
+/* Navigation bar styling */
+nav {
+    background: #1a1a1a;
+    /* Dark gray background */
+    padding: 10px;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid #333333;
+    /* Darker border */
+    height: 50px;
+    display: flex;
+}
+
+/* Tabs styling */
+.tabs {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    flex-grow: 1;
+    user-select: none;
+    color: #ff0000;
+    /* Red text color for main content */
+}
+
+/* List styling */
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+}
+
+/* List item styling */
+li {
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px 20px;
+    /* Increased padding for better spacing */
+    background: #1a1a1a;
+    /* Dark gray background for list items */
+    cursor: pointer;
+    height: 40px;
+    /* Increased height for better touch targets */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s ease-in-out;
+}
+
+li:hover {
+    background: #2a2a2a;
+    /* Darker gray on hover */
+}
+
+li.selected {
+    background: #ff0000;
+    /* Red background for selected item */
+}
+
+
+/* Button styling within list items */
+li button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: #000000;
+    /* Black button background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+li button:hover {
+    background: #ff0000;
+    /* Red background on button hover */
+}
+
+/* Background for the project container */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* Full width */
+    background: #1a1a1a;
+    /* Dark gray for contrast */
+}
+
+/* Add item button styling */
+.add-item {
+    width: 36px;
+    height: 36px;
+    background: #ff0000;
+    /* Red background */
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    color: #ffffff;
+    /* White icon color */
+    font-size: 24px;
+    /* Increased size for better visibility */
+    transition: background 0.2s ease;
+}
+
+.add-item:hover {
+    background: #cc0000;
+    /* Darker red on hover */
+}
+
+.add-item:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
