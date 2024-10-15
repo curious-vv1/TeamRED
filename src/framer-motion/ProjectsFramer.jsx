@@ -1,17 +1,10 @@
 import "./ProjectsFramer.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { initialTabs as tabs } from "./ProjectsFramerConstants";
 import { motion, AnimatePresence } from "framer-motion";
 
-
-
-
 const ProjectsFramer = () => {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
-
-  useEffect(() => {
-    console.log(selectedTab.label);
-  }, [selectedTab]);
   return (
     <div className="projects">
       <nav>
