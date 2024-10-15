@@ -2,6 +2,10 @@ import "./ProjectsFramer.css";
 import { useEffect, useState } from "react";
 import { initialTabs as tabs } from "./ProjectsFramerConstants";
 import { motion, AnimatePresence } from "framer-motion";
+
+
+
+
 const ProjectsFramer = () => {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 

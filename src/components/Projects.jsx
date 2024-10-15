@@ -1,5 +1,7 @@
 import ProjectsFramer from "../framer-motion/ProjectsFramer";
 
+
+
 const Projects = () => {
   return (
     <div
